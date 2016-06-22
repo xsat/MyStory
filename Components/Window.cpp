@@ -1,7 +1,11 @@
 #include "Window.h"
 
-Window::Window() 
-: renderWindow(sf::VideoMode(200, 200), "3")
+namespace Components
+{
+
+Components::Window::Window()
+    : renderWindow(sf::VideoMode(200, 200), "4")
+    , event()
 {
 }
 
@@ -11,21 +15,38 @@ Window::~Window()
 
 void Window::run()
 {
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
-
-    while (renderWindow.isOpen())
-    {
-        sf::Event event;
-        while (renderWindow.pollEvent(event))
-        {
-            if (event.type == sf::Event::Closed)
-                renderWindow.close();
+    for (; renderWindow.isOpen(); ) {
+        for (; renderWindow.pollEvent(event); ) {
+            events();
         }
 
-        renderWindow.clear();
-        renderWindow.draw(shape);
-        renderWindow.display();
+        clear();
+        draw();
+        display();
     }
-
 }
+
+void Window::events()
+{
+    if (event.type == sf::Event::Closed)
+        renderWindow.close();
+}
+
+void Window::clear()
+{
+    renderWindow.clear();
+}
+
+void Window::draw()
+{
+    sf::CircleShape shape(100.f);
+    shape.setFillColor(sf::Color::Green);
+    renderWindow.draw(shape);
+}
+
+void Window::display()
+{
+    renderWindow.display();
+}
+
+} // namespace Components

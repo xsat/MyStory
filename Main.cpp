@@ -2,7 +2,7 @@
 
 int main()
 {
-    Window w;
+    Components::Window w;
     w.run();
 
     return 0;
