@@ -1,9 +1,10 @@
 #include "Modes.h"
 
-namespace Components
+namespace components
 {
 
-Modes::Modes()
+Modes::Modes() 
+    : items()
 {
 }
 
@@ -11,4 +12,4 @@ Modes::~Modes()
 {
 }
 
-} // namespace Components
+} // namespace components

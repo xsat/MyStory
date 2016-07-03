@@ -1,6 +1,6 @@
 #include "Menu.h"
 
-namespace Modes
+namespace modes
 {
 
 Menu::Menu()
@@ -12,4 +12,4 @@ Menu::~Menu()
 {
 }
 
-} // namespace Modes
+} // namespace modes

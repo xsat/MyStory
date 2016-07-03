@@ -1,7 +1,8 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+#include "Modes.h"
 
-namespace Components 
+namespace components 
 {
 
 class Window
@@ -13,10 +14,11 @@ public:
 private:
     sf::RenderWindow renderWindow;
     sf::Event event;
+    Modes modes;
     void events();
     void clear();
     void draw();
     void display();
 };
 
-} // namespace Components
+} // namespace components

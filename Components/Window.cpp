@@ -1,11 +1,12 @@
 #include "Window.h"
 
-namespace Components
+namespace components
 {
 
-Components::Window::Window()
+Window::Window()
     : renderWindow(sf::VideoMode(200, 200), "4")
     , event()
+    , modes()
 {
 }
 
@@ -49,4 +50,4 @@ void Window::display()
     renderWindow.display();
 }
 
-} // namespace Components
+} // namespace components

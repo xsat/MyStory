@@ -1,6 +1,6 @@
 #include "Mode.h"
 
-namespace Modes
+namespace modes
 {
 
 Mode::Mode()
@@ -11,4 +11,4 @@ Mode::~Mode()
 {
 }
 
-} // namespace Modes
+} // namespace modes

@@ -1,6 +1,8 @@
 #pragma once
+#include <vector>
+#include "../modes/Mode.h"
 
-namespace Components
+namespace components
 {
 
 class Modes
@@ -8,6 +10,8 @@ class Modes
 public:
     Modes();
     ~Modes();
+private:
+    std::vector<modes::Mode *> items;
 };
 
-} // namespace Components
+} // namespace components

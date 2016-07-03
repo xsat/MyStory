@@ -1,6 +1,6 @@
 #include "Game.h"
 
-namespace Modes
+namespace modes
 {
 
 Game::Game() 
@@ -12,4 +12,4 @@ Game::~Game()
 {
 }
 
-} // namespace Modes
+} // namespace modes

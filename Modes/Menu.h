@@ -1,7 +1,7 @@
 #pragma once
 #include "Mode.h"
 
-namespace Modes
+namespace modes
 {
 
 class Menu : public Mode
@@ -11,5 +11,5 @@ public:
     ~Menu();
 };
 
-} // namespace Modes
+} // namespace modes
 

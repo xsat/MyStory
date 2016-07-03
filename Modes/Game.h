@@ -1,7 +1,7 @@
 #pragma once
 #include "Mode.h"
 
-namespace Modes
+namespace modes
 {
 
 class Game : public Mode
@@ -11,4 +11,4 @@ public:
     ~Game();
 };
 
-} // namespace Modes
+} // namespace modes

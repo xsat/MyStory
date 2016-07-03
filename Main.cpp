@@ -1,8 +1,8 @@
-#include "Components\Window.h"
+#include "components\Window.h"
 
 int main()
 {
-    Components::Window w;
+    components::Window w;
     w.run();
 
     return 0;

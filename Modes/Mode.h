@@ -1,6 +1,6 @@
 #pragma once
 
-namespace Modes
+namespace modes
 {
 
 class Mode
@@ -10,5 +10,5 @@ public:
     ~Mode();
 };
 
-} // namespace Modes
+} // namespace modes
 
